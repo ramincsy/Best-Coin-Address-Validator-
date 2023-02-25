@@ -1,4 +1,4 @@
-Best-Coin-Address-Validator
+#Best-Coin-Address-Validator
 Best-Coin-Address-Validator is a free and open-source console application written in C# for validating digital currency addresses such as Bitcoin, Ethereum, Litecoin, and other cryptocurrencies.
 
 Features
