@@ -10,6 +10,9 @@ Best-Coin-Address-Validator is a free and open-source console application writte
 - Can be easily integrated into other applications
 - Cross-platform compatibility
 - Open-source with viewable source code on GitHub
+- 
+Bitcoin (BTC) | Ethereum (ETH) | Litecoin (LTC) | NEO (NEO) | Polkadot (DOT) | Cardano (ADA) | Cardano2 (ADA2) | Dogecoin (DOGE) | Tron (TRX) | XRP (XRP) | ICON (ICX) | Stellar (XLM) | IOTA (IOTA) | Atom (ATOM) | AVAX (AVAX) | SOL (SOL) | QTUM (QTUM) | THETA (THETA) | DAI (DAI) | Monero (XMR) | Chainlink (LINK) | Algorand (ALGO) | Tezos (XTZ) | NEM (XEM) | Kusama (KSM) | Ontology (ONT) | NEAR Protocol (NEAR) | Band Protocol (BAND) | Zilliqa (ZIL) | Nano (NANO) | Hedera Hashgraph (HBAR) | Bitcoin Cash (BCH) | Binance Smart Chain (BSC)
+
 
 ## Getting Started
 
