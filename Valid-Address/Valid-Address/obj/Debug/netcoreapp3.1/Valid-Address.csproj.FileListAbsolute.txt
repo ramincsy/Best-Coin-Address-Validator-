@@ -1,0 +1,14 @@
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\bin\Debug\netcoreapp3.1\Valid-Address.exe
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\bin\Debug\netcoreapp3.1\Valid-Address.deps.json
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\bin\Debug\netcoreapp3.1\Valid-Address.runtimeconfig.json
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\bin\Debug\netcoreapp3.1\Valid-Address.runtimeconfig.dev.json
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\bin\Debug\netcoreapp3.1\Valid-Address.dll
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\bin\Debug\netcoreapp3.1\Valid-Address.pdb
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\obj\Debug\netcoreapp3.1\Valid-Address.csproj.AssemblyReference.cache
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\obj\Debug\netcoreapp3.1\Valid-Address.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\obj\Debug\netcoreapp3.1\Valid-Address.AssemblyInfoInputs.cache
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\obj\Debug\netcoreapp3.1\Valid-Address.AssemblyInfo.cs
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\obj\Debug\netcoreapp3.1\Valid-Address.csproj.CoreCompileInputs.cache
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\obj\Debug\netcoreapp3.1\Valid-Address.dll
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\obj\Debug\netcoreapp3.1\Valid-Address.pdb
+C:\Users\Ramin_Csy\Desktop\coinex\app\Valid-Address\Valid-Address\obj\Debug\netcoreapp3.1\Valid-Address.genruntimeconfig.cache

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RvvFS1iE8902xfNlIMDrrucUxf3bvVhvYEb7KL+WeiTW0KDmxTYiYS3uWeSBg1ExTffVUwIoMcbgw5l+oH8wKw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ramin_Csy\\Desktop\\coinex\\app\\Valid-Address\\Valid-Address\\Valid-Address.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ramin_Csy\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512"
+  ],
+  "logs": []
+}
