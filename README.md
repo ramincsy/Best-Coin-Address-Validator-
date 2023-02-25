@@ -13,7 +13,13 @@ Best-Coin-Address-Validator is a free and open-source console application writte
 
 ## Getting Started
 
-To get started with Best-Coin-Address-Validator, simply download or clone the repository and run the program in a console environment. The program will prompt you to enter a digital currency address, and will then validate it using the secure algorithms.
+To get started with Best-Coin-Address-Validator, simply follow these steps:
+
+Clone or download the repository to your local machine.
+Open the solution in your preferred C# IDE.
+Run the application in a console environment. (Best-Coin-Address-Validator--main\Valid-Address\Valid-Address\bin\Debug\netcoreapp3.1\Valid-Address.exe
+Enter a digital currency address when prompted.
+The program will validate the address and display a message indicating whether it is valid or not.
 
 ## Contributing
 
