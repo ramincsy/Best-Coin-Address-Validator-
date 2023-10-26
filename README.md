@@ -24,10 +24,8 @@ Run the application in a console environment. (Best-Coin-Address-Validator--main
 Enter a digital currency address when prompted.
 The program will validate the address and display a message indicating whether it is valid or not.
 
-## Contributing
+## Contributions
+If you'd like to contribute to this project or have made improvements, please submit a pull request. Additionally, feel free to use the Issues section to report any problems or suggest enhancements.
 
-Contributions to Best-Coin-Address-Validator are always welcome! Whether you find a bug, have a feature request, or want to contribute code, feel free to submit an issue or pull request on GitHub.
-
-## License
-
-Best-Coin-Address-Validator is released under the [MIT License](https://opensource.org/licenses/MIT).
+## Giving Stars
+If this project has been beneficial to you and has helped you in learning React, please consider giving it a star.
