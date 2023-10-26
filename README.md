@@ -11,7 +11,60 @@ Best-Coin-Address-Validator is a free and open-source console application writte
 - Cross-platform compatibility
 - Open-source with viewable source code on GitHub
 - 
-Bitcoin (BTC) | Ethereum (ETH) | Litecoin (LTC) | NEO (NEO) | Polkadot (DOT) | Cardano (ADA) | Cardano2 (ADA2) | Dogecoin (DOGE) | Tron (TRX) | XRP (XRP) | ICON (ICX) | Stellar (XLM) | IOTA (IOTA) | Atom (ATOM) | AVAX (AVAX) | SOL (SOL) | QTUM (QTUM) | THETA (THETA) | DAI (DAI) | Monero (XMR) | Chainlink (LINK) | Algorand (ALGO) | Tezos (XTZ) | NEM (XEM) | Kusama (KSM) | Ontology (ONT) | NEAR Protocol (NEAR) | Band Protocol (BAND) | Zilliqa (ZIL) | Nano (NANO) | Hedera Hashgraph (HBAR) | Bitcoin Cash (BCH) | Binance Smart Chain (BSC)
+<table>
+  <tr>
+    <td>1. Bitcoin (BTC)</td>
+    <td>2. Ethereum (ETH)</td>
+    <td>3. Litecoin (LTC)</td>
+    <td>4. NEO (NEO)</td>
+  </tr>
+  <tr>
+    <td>5. Polkadot (DOT)</td>
+    <td>6. Cardano (ADA)</td>
+    <td>7. Cardano2 (ADA2)</td>
+    <td>8. Dogecoin (DOGE)</td>
+  </tr>
+  <tr>
+    <td>9. Tron (TRX)</td>
+    <td>10. XRP (XRP)</td>
+    <td>11. ICON (ICX)</td>
+    <td>12. Stellar (XLM)</td>
+  </tr>
+  <tr>
+    <td>13. IOTA (IOTA)</td>
+    <td>14. Atom (ATOM)</td>
+    <td>15. AVAX (AVAX)</td>
+    <td>16. SOL (SOL)</td>
+  </tr>
+  <tr>
+    <td>17. QTUM (QTUM)</td>
+    <td>18. THETA (THETA)</td>
+    <td>19. DAI (DAI)</td>
+    <td>20. Monero (XMR)</td>
+  </tr>
+  <tr>
+    <td>21. Chainlink (LINK)</td>
+    <td>22. Algorand (ALGO)</td>
+    <td>23. Tezos (XTZ)</td>
+    <td>24. NEM (XEM)</td>
+  </tr>
+  <tr>
+    <td>25. Kusama (KSM)</td>
+    <td>26. Ontology (ONT)</td>
+    <td>27. NEAR Protocol (NEAR)</td>
+    <td>28. Band Protocol (BAND)</td>
+  </tr>
+  <tr>
+    <td>29. Zilliqa (ZIL)</td>
+    <td>30. Nano (NANO)</td>
+    <td>31. Hedera Hashgraph (HBAR)</td>
+    <td>32. Bitcoin Cash (BCH)</td>
+  </tr>
+  <tr>
+    <td>33. Binance Smart Chain (BSC)</td>
+  </tr>
+</table>
+
 
 
 ## Getting Started
