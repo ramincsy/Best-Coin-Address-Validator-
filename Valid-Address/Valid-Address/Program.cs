@@ -75,8 +75,7 @@ namespace Valid_Address
                     Console.WriteLine("The address is not valid.");
                 }
 
-                // Wait for user input before closing the program
-                Console.WriteLine("Press any key to exit.");
+                Console.WriteLine("Press any key to check another address. Ctrl+C to quit.");
                 Console.ReadKey();
 
             }

@@ -4,6 +4,8 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Valid_Address</RootNamespace>
+    <!-- Allow `dotnet run` on a current SDK/runtime when 3.1 is not installed. -->
+    <RollForward>LatestMajor</RollForward>
   </PropertyGroup>
 
 </Project>
