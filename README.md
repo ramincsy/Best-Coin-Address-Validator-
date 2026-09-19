@@ -1,33 +1,42 @@
 # Best Coin Address Validator
 
-A small **C# console** program that checks whether a pasted cryptocurrency address matches a known **address-format pattern**.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![C# console](https://img.shields.io/badge/C%23-console-512BD4.svg)](Valid-Address/Valid-Address/Valid-Address.csproj)
 
-You type an address; the app tests it against a dictionary of regular expressions (one entry per network). If a pattern matches, it prints the **first** matching network. If none match, it reports that the address is not valid.
+Paste a cryptocurrency address. This **C# console** app checks it against a dictionary of **regular expressions** (one entry per network) and prints the **first** matching name.
 
-This is **format checking with regex**, not cryptographic checksum validation, not a blockchain lookup, and not a library you reference from other projects.
-
-## Requirements
-
-- [.NET SDK](https://dotnet.microsoft.com/download) that can build the project
-- Project file: [`Valid-Address/Valid-Address/Valid-Address.csproj`](Valid-Address/Valid-Address/Valid-Address.csproj)
-- Solution file: [`Valid-Address/Valid-Address.sln`](Valid-Address/Valid-Address.sln)
-- Target framework in the `.csproj`: **`netcoreapp3.1`** (.NET Core 3.1)
-
-.NET Core 3.1 reached end of support in December 2022. The `.csproj` sets `RollForward` to `LatestMajor`, so `dotnet run` can use a newer installed runtime (for example .NET 8) when 3.1 is missing. If you prefer a current target, change `<TargetFramework>` to something like `net8.0` — this program is a single `Program.cs` file with no extra NuGet packages.
-
-## Build and run
-
-Clone the repository, then from the **repository root**:
+It is a **format check**, not a checksum, not an on-chain lookup, and not a library you reference from other projects.
 
 ```bash
-dotnet run --project Valid-Address/Valid-Address/Valid-Address.csproj
+dotnet run --project Valid-Address/Valid-Address/Valid-Address.csproj -- 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
 ```
 
-Or open `Valid-Address/Valid-Address.sln` in Visual Studio, Rider, or VS Code with the C# extension, and run the console project.
+```text
+The Bitcoin address '1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa' is valid.
+```
 
-When prompted, paste an address and press Enter. The program prints whether a pattern matched, then waits for a key before asking for another address. Stop it with `Ctrl+C`.
+## Demo
 
-Example:
+From the repository root, pass one or more addresses after `--`. The process prints a line per address and exits.
+
+```bash
+dotnet run --project Valid-Address/Valid-Address/Valid-Address.csproj -- \
+  1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa \
+  0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb0 \
+  TJYeasRUa3oz3XzGZ9Dw5Xk2XK3D6u1wBf \
+  not-an-address
+```
+
+| Input | What the app prints |
+| --- | --- |
+| `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` | `The Bitcoin address '…' is valid.` |
+| `0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb0` | `The Ethereum address '…' is valid.` |
+| `TJYeasRUa3oz3XzGZ9Dw5Xk2XK3D6u1wBf` | `The Tron address '…' is valid.` |
+| `not-an-address` | `The address is not valid.` |
+
+`0x` + 40 hex matches **Ethereum** first. Later dictionary entries that use the same shape (THETA, DAI, LINK, Hedera Hashgraph, and the `0x` form of Binance Smart Chain) never win.
+
+Need the prompt instead? Run the same project with no extra arguments, paste an address, press Enter, then any key to check another. Stop with `Ctrl+C`.
 
 ```text
 Enter the digital currency address to validate:
@@ -36,7 +45,20 @@ The Bitcoin address '1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa' is valid.
 Press any key to check another address. Ctrl+C to quit.
 ```
 
-After you compile, binaries are written under `Valid-Address/Valid-Address/bin/` (gitignored). Open the solution in an IDE if you prefer not to use the CLI.
+```bash
+dotnet run --project Valid-Address/Valid-Address/Valid-Address.csproj -- --help
+```
+
+## Requirements
+
+- A [.NET SDK](https://dotnet.microsoft.com/download) that can build the project
+- Project: [`Valid-Address/Valid-Address/Valid-Address.csproj`](Valid-Address/Valid-Address/Valid-Address.csproj)
+- Solution: [`Valid-Address/Valid-Address.sln`](Valid-Address/Valid-Address.sln)
+- Target framework in the `.csproj`: **`netcoreapp3.1`**
+
+.NET Core 3.1 reached end of support in December 2022. The project sets `RollForward` to `LatestMajor`, so `dotnet run` can use a newer installed runtime (for example .NET 8) when 3.1 is missing. If you prefer a current target, change `<TargetFramework>` to `net8.0` — this program is a single `Program.cs` file with no extra NuGet packages.
+
+You can also open the solution in Visual Studio, Rider, or VS Code with the C# extension.
 
 ## What it actually checks
 
@@ -81,9 +103,9 @@ Patterns live in [`Valid-Address/Valid-Address/Program.cs`](Valid-Address/Valid-
 ## Limitations (read this before you rely on it)
 
 - A match means “this string looks like one of the regexes,” not “this address is spendable or checksum-correct.”
-- Patterns are tested in dictionary order. The **first** hit wins. Several entries (Ethereum, THETA, DAI, LINK, Hedera Hashgraph, and the `0x…` form of Binance Smart Chain) use the same `0x` + 40 hex shape, so those addresses are reported as **Ethereum**.
+- Patterns are tested in dictionary order. The **first** hit wins.
 - Some regexes are stricter or looser than real-world wallets (for example Litecoin in this file expects an `ltc` / `LTC` prefix; many live Litecoin addresses do not).
-- There is no GUI, no API, and no per-coin selector — only the console prompt.
+- There is no GUI, no API, and no per-coin selector — only the console prompt or command-line arguments.
 
 ## Project layout
 
@@ -94,8 +116,10 @@ Patterns live in [`Valid-Address/Valid-Address/Program.cs`](Valid-Address/Valid-
 ├── Valid-Address/Valid-Address.sln
 └── Valid-Address/Valid-Address/
     ├── Valid-Address.csproj    # netcoreapp3.1 console exe
-    └── Program.cs              # regex dictionary + prompt loop
+    └── Program.cs              # regex dictionary + prompt / CLI
 ```
+
+After you compile, binaries are written under `Valid-Address/Valid-Address/bin/` (gitignored).
 
 ## Contributing
 
@@ -116,10 +140,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## فارسی
 
-برنامهٔ کنسول سی‌شارپ برای **بررسی قالب آدرس** شبکه‌هایی مثل بیت‌کوین، اتریوم و ترون. آدرس را وارد می‌کنید؛ برنامه آن را با چند الگوی regex مقایسه می‌کند و در صورت تطابق، نام اولین شبکهٔ مطابق را نشان می‌دهد.
+برنامهٔ کنسول سی‌شارپ برای **بررسی قالب آدرس** شبکه‌هایی مثل بیت‌کوین، اتریوم و ترون. آدرس را وارد می‌کنید؛ برنامه آن را با چند الگوی regex مقایسه می‌کند و نام **اولین** شبکهٔ مطابق را چاپ می‌کند.
 
-این ابزار **checksum رمزنگاری یا استعلام بلاکچین انجام نمی‌دهد**. هدف پروژه `netcoreapp3.1` است. اجرا از ریشهٔ مخزن:
+این ابزار **checksum رمزنگاری یا استعلام بلاکچین انجام نمی‌دهد**.
 
 ```bash
-dotnet run --project Valid-Address/Valid-Address/Valid-Address.csproj
+dotnet run --project Valid-Address/Valid-Address/Valid-Address.csproj -- 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa
 ```
